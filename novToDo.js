@@ -8,16 +8,7 @@ let button2 = document.getElementById("addListNameButton")
 button2.onclick = handleButtonClick2
 }
 
-//This is for the button that adds tasks
-function handleButtonClick1() {
-  let textInput = document.getElementById("taskInput")
-  let task = textInput.value
-  if (task =="") {
-    alert("Please add a task")
-}else {
-  alert("Adding " + task)
-}
-}
+
 
 //This is for the button that adds the list name
 function handleButtonClick2() {
@@ -28,7 +19,32 @@ function handleButtonClick2() {
 }else {
   alert("Adding " + listName)
 }
+let p = document.createElement("p")
+p.innerHTML = listName
+
+let h1 = document.getElementById("taskListTitle")
+h1.appendChild(p)
 }
+//This is for the button that adds tasks
+function handleButtonClick1() {
+  let textInput = document.getElementById("taskInput")
+  let task = textInput.value
+  if (task =="") {
+    alert("Please add a task")
+}else {
+  alert("Adding " + task)
+}
+let li = document.createElement("li")
+li.innerHTML = task
+
+let ul = document.getElementById("taskList")
+ul.appendChild(li)
+
+}
+
+
+
+
 
 
 
