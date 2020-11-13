@@ -34,11 +34,16 @@ function handleButtonClick1() {
 }else {
   alert("Adding " + task)
 }
+
 let li = document.createElement("li")
 li.innerHTML = task
 
+
 let ul = document.getElementById("taskList")
 ul.appendChild(li)
+li.insertAdjacentHTML("beforeend", "<button>Delete</button>")
+
+
 
 }
 
