@@ -36,7 +36,7 @@ function handleButtonClick1() {
 }
 
 let li = document.createElement("li")
-li.innerHTML = task
+//li.innerHTML = task + `<button>Delete</button>`
 
 
 let ul = document.getElementById("taskList")
@@ -45,6 +45,12 @@ li.insertAdjacentHTML("beforeend", "<button>Delete</button>")
 
 
 
+}
+
+//This is for the delete button that does the animated strike-through.
+
+function handleButtonClickDelete() {
+  
 }
 
 
