@@ -45,7 +45,7 @@ let ul = document.getElementById("taskList")
 ul.appendChild(li)
 li.innerHTML = task
 
-li.insertAdjacentHTML("beforeend", "<button onclick='handlDelete()'>Delete</button>")
+li.insertAdjacentHTML("beforeend", "<button onclick='handleDelete(this)'>Delete</button>")
 
 
 
@@ -53,9 +53,15 @@ li.insertAdjacentHTML("beforeend", "<button onclick='handlDelete()'>Delete</butt
 
 //This is for the delete button that does the animated strike-through.
 
-function handleDelete() {
+function handleDelete(e) {
+  e.parentNode.parentNode.removeChild(e.parentNode)
+
+  
+
 
 }
+
+
 
 
 
