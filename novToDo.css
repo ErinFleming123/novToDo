@@ -6,3 +6,29 @@
   
   
 }
+
+
+
+  @keyframes crossOut {
+  from {width: 0px;}
+  to {width: 1000px;}
+}
+
+.line {
+  background-color: black;
+  height:  1px;
+  width: 0px;
+  animation-name: crossOut;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: 17px;
+  
+  
+  
+  
+}
+.task {
+  position: fixed;
+
+}

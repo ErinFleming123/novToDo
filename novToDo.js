@@ -30,6 +30,7 @@ h1.appendChild(p)
 function handleButtonClick1() {
   let textInput = document.getElementById("taskInput")
   let task = textInput.value
+  
   if (task =="") {
     alert("Please add a task")
 }else {
@@ -43,7 +44,8 @@ let li = document.createElement("li")
 let ul = document.getElementById("taskList")
 ul.appendChild(li)
 li.innerHTML = task
-li.insertAdjacentHTML("beforeend", "<button>Delete</button>")
+
+li.insertAdjacentHTML("beforeend", "<button onclick='handlDelete()'>Delete</button>")
 
 
 
@@ -51,7 +53,7 @@ li.insertAdjacentHTML("beforeend", "<button>Delete</button>")
 
 //This is for the delete button that does the animated strike-through.
 
-function handleButtonClickDelete() {
+function handleDelete() {
 
 }
 
