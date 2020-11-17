@@ -51,7 +51,7 @@ li.insertAdjacentHTML("beforeend", "<button onclick='handleDelete(this)'>Delete<
 
 }
 
-//This is for the delete button that does the animated strike-through.
+//This is for the delete button that deletes the task.
 
 function handleDelete(e) {
   e.parentNode.parentNode.removeChild(e.parentNode)
