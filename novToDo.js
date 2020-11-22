@@ -25,6 +25,9 @@ p.innerHTML = listName
 
 let h1 = document.getElementById("taskListTitle")
 h1.appendChild(p)
+p.insertAdjacentHTML("afterend", "<input type='text' id='taskInput' size='40' placeholder='Write a new task here'>")
+
+
 }
 //This is for the button that adds tasks
 function handleButtonClick1() {
