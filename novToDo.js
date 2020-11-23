@@ -2,8 +2,7 @@ window.onload = init
 
 function init(){
 
-let button1 = document.getElementById("addButton")
-button1.onclick = handleButtonClick1
+
 let button2 = document.getElementById("addListNameButton")
 button2.onclick = handleButtonClick2
 
@@ -19,6 +18,7 @@ function handleButtonClick2() {
   if (listName !=="") {
     alert("Adding " + listName)
     
+    
 
 
 let p = document.createElement("p")
@@ -27,7 +27,9 @@ p.innerHTML = listName
 let h1 = document.getElementById("taskListTitle")
 
 h1.appendChild(p)
-p.insertAdjacentHTML("beforeend", "<button>Delete List</button></br><input type='text' size='40' placeholder='Write a new task here'><button>Add Task</button>")
+p.insertAdjacentHTML("beforeend", "<button>Delete List</button></br><form><input type='text' size='40' placeholder='Write a new task here'><button>Add Task</button></form>")
+
+
 }else {
   alert("Please add a list name.")
  
