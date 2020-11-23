@@ -27,7 +27,9 @@ p.innerHTML = listName
 let h1 = document.getElementById("taskListTitle")
 
 h1.appendChild(p)
-p.insertAdjacentHTML("beforeend", "<button>Delete List</button></br><form><input type='text' size='40' placeholder='Write a new task here'><button>Add Task</button></form><ul></ul>")
+p.insertAdjacentHTML(
+  "beforeend", "<button>Delete List</button></br><form><input type='text' size='40' placeholder='Write a new task here'><button>Add Task</button></form></br><ul></ul>"
+  )
 
 
 }else {
