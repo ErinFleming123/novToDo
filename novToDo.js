@@ -19,10 +19,7 @@ function handleButtonClick2() {
   if (listName !=="") {
     alert("Adding " + listName)
     
-}//else {
-  //alert("Please add a list name.")
- 
-}
+
 
 let p = document.createElement("p")
 p.innerHTML = listName
@@ -31,7 +28,10 @@ let h1 = document.getElementById("taskListTitle")
 
 h1.appendChild(p)
 p.insertAdjacentHTML("beforeend", "<button>Delete List</button></br><input type='text' size='40' placeholder='Write a new task here'><button>Add Task</button>")
-
+}else {
+  alert("Please add a list name.")
+ 
+}
 
 }
 //This is for the button that adds tasks
