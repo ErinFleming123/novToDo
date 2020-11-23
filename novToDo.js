@@ -15,17 +15,22 @@ button2.onclick = handleButtonClick2
 function handleButtonClick2() {
   let listNameInput = document.getElementById("listName")
   let listName = listNameInput.value
-  if (listName =="") {
-    alert("Please add a list name.")
-}else {
-  alert("Adding " + listName)
+  
+  if (listName !=="") {
+    alert("Adding " + listName)
+    
+}//else {
+  //alert("Please add a list name.")
+ 
 }
+
 let p = document.createElement("p")
 p.innerHTML = listName
 
 let h1 = document.getElementById("taskListTitle")
+
 h1.appendChild(p)
-p.insertAdjacentHTML("afterend", "<input type='text' id='taskInput' size='40' placeholder='Write a new task here'>")
+p.insertAdjacentHTML("beforeend", "<button>Delete List</button></br><input type='text' size='40' placeholder='Write a new task here'><button>Add Task</button>")
 
 
 }
