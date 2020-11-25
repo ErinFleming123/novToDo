@@ -16,7 +16,12 @@ function handleButtonClick1() {
     let delListBtn = document.createElement("button")
     delListBtn.innerHTML = "Delete List"
     p.appendChild(delListBtn)
-
+    let taskForm = document.createElement("FORM")
+    taskForm.innerHTML = `<input type="text" size="40" placeholder="Write new task here">
+    <input type="button" value="Add New Task">`
+    p.appendChild(taskForm)
+    
+    
     newListInput.value = ""
     
   }else{
